@@ -100,7 +100,7 @@ menu{
 }
 .main_heaad>form>input{
 	border: none;
-	width: 1100px;
+	width: 1000px;
 	height: 25px;
 	top: 10px;
 	margin: 0 30px;
@@ -130,6 +130,7 @@ menu{
 	font-size: 20px;
 	font-weight: 400;
 	cursor: pointer;
+	border-radius: 20px;
 }
 .main_heaad>a+a{
 	background-color: rgb(68 72 87);
@@ -150,8 +151,10 @@ menu{
 .main_zone>ul li{
 	display: inline-block;
 	text-align: center;
-	width: 70px;
+	width: 150px;
 	padding: 15px 20px;
+	margin-left: 50px;
+	font-size: 24px;
 }
 .main_zone li:hover{
 	background-color:rgb(49, 52, 63) ;
@@ -163,89 +166,101 @@ menu{
 }
 
 .main_zone select{
-	margin:10px 150px;
+	margin:10px 0;
+	margin-left: 300px;
 	border: none;
-	color: white;
+	color: black;
+	background-color: rgb(179, 179, 179);
+	font-size: 24px;
 
 }
 .main_zone form::before{
 	content: "Сортировать :";
 	position: absolute;
-	top: 10px;
-	left: 50px;
+	top: 15px;
+	left: 160px;
 	color: rgb(179, 179, 179);
 	display: block;
-	width: 100px;
-	height: 20px;
+	width: 120px;
+	height: 30px;
+	font-size: 20px;
 }
 .main_zone form::after{
 	content: "Старна :";
 	position: absolute;
-	top: 10px;
-	left:495px;
+	top: 15px;
+	left:675px;
 	color: rgb(179, 179, 179);
 	display: block;
 	width: 100px;
 	height: 20px;
+	font-size: 20px;
 }
 
 .prev_zone{
 	background-color:rgb(179, 179, 179) ;
-	height: 500px;
 	width: 1500px;
 	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 
-	animation-name: menu;
+.prev_zone section{
+	background-color: aliceblue;
+	width: 700px;
+	height: 150px;
+	margin: 10px 10px;
+	animation-name: menus;
 	animation-duration: 1s;
 	animation-timing-function: linear;
 }
-@-webkit-keyframes menu {
+@-webkit-keyframes menus {
 	from {
 		height: 0;
-		width: 1500px;
+		width: 700px;
 	  }
-	
 	  to {
 		width: 100%;
-		width: 1500px;
+		width: 700px;
 	  }
 	}
-  @-o-keyframes menu {
+  @-o-keyframes menus {
 	from {
 		height: 0;
-		width: 1500px;
+		width: 700px;
 	  }
 	
 	  to {
 		width: 100%;
-		width: 1500px;
-	  }
-	}
-  
-  @-moz-keyframes menu {
-	from {
-		height: 0;
-		width: 1500px;
-	  }
-	
-	  to {
-		width: 100%;
-		width: 1500px;
+		width: 700px;
 	  }
 	}
   
-  @keyframes menu{
+  @-moz-keyframes menus {
 	from {
 		height: 0;
-		width: 1500px;
+		width: 700px;
 	  }
 	
 	  to {
 		width: 100%;
-		width: 1500px;
+		width: 700px;
 	  }
 	}
-
+  
+  @keyframes menus{
+	from {
+		height: 0;
+		width: 700px;
+	  }
+	
+	  to {
+		width: 100%;
+		width: 700px;
+	  }
+	}
 
 
 
